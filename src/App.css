@@ -4,5 +4,5 @@ html::-webkit-scrollbar{
 
 .cardContainer{
     display: inline-flex;
-    flex-shrink: 10px;
+    flex-wrap: nowrap;
 }
