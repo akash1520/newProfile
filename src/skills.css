@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+.card{
+    background-color: rgb(137, 98, 210);
+    width: 265px;
+    height: 370px;
+    border-radius: 5%;
+    text-align: center;
+    margin:2% 2% 2% 2%;
+}
+
+.card:hover{
+    animation: shake 0.5s;
+    animation-direction: 3;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+img{
+    position: relative;
+    top:5%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10%;
+    color: rgb(233, 122, 222);
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    word-wrap: break-word;
+    margin: 20px 10px auto 10px;
+    color: rgb(134, 245, 245);
+
+}

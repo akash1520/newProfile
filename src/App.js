@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './header'
+import Skills from './skills';
+import SkillsData from './SkillsData';
+import './App.css'
+
+function createCard(SkillsData)
+{
+  return (
+    <Skills 
+    key={SkillsData.id} 
+    skillImg={SkillsData.imgSrc} 
+    skillName={SkillsData.skillName} 
+    skillDesc={SkillsData.desc}/>
+  );
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Header/>
       </header>
-    </div>
+        <div className='cardContainer'>{SkillsData.map(createCard)}</div>
+      </div>
   );
 }
 
