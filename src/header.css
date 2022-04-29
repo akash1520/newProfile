@@ -42,6 +42,7 @@ html{
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: all .08s;
+  font-size: large;
 }
 
 .links a:hover{
